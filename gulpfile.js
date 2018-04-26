@@ -81,8 +81,8 @@ gulp.task('minCss',function(){
 // gulp.watch(['./static/zjb/css/index.css'],['minCss']);
 
 
-// let lessPath = ['./static/react/pages/novel/less/*.less'];
-let lessPath = ['./static/less/*.less'];
+let lessPath = ['./static/test/less/*.less'];
+// let lessPath = ['./static/less/*.less'];
 // let lessPath = ['./static/works/pages/views/sasp/modules/caseInput/less/index.less'];
 
 gulp.task('less',() => {

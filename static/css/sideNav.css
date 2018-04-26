@@ -1,0 +1,60 @@
+.side-nav-box {
+  display: flex;
+  flex-flow: column;
+  width: 200px;
+  background-color: #293038;
+  color: #fff;
+  transition: width .5s;
+}
+.side-nav-box .triangle {
+  display: inline-block;
+  height: 0;
+  width: 0;
+  font-size: 0;
+  border-bottom: 6px solid #fff;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  transform: rotate(90deg);
+  margin: 0 17px;
+}
+.side-nav-box .active .triangle {
+  transform: rotate(180deg);
+}
+.side-nav-box .iconfont {
+  margin: 0 17px;
+}
+.side-nav-box .nav-header {
+  display: block;
+  cursor: pointer;
+}
+.side-nav-box .nav-header:hover,
+.side-nav-box .nav-header.active {
+  background-color: #2E4E99;
+}
+.side-nav-box .nav-header-parent {
+  background-color: #23282E;
+  height: 34px;
+  line-height: 34px;
+}
+.side-nav-box .nav-header-child {
+  height: 40px;
+  line-height: 40px;
+}
+.side-nav-box .nav-content {
+  height: 0;
+  overflow: hidden;
+  transition: height .5s;
+}
+.side-nav-box .side-nav-header {
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  cursor: pointer;
+}
+.side-nav-box .side-nav-body {
+  flex: 1;
+}
+.side-nav-box.side-nav-box-collapsed {
+  font-size: 0;
+  width: 50px;
+}

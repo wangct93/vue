@@ -11,7 +11,7 @@ let src = 'src/index.js';
 // let src = 'react/pages/novel/src/index.js';
 
 
-let reactModule = {
+let vueModule = {
     mode:'development',      //development:开发模式      production:上线模式
     entry: {
         index:path.resolve(__dirname,'static',src)
@@ -23,11 +23,11 @@ let reactModule = {
     module:{
         rules:[
             {
-                test:/\.jsx?$/,
+                test:/\.js$/,
                 use:{
                     loader:'babel-loader',
                     options:{
-                        presets:['react','es2015']
+                        presets:['es2015']
                     }
                 },
                 exclude:/node_modules/
@@ -71,4 +71,4 @@ let babelModule = {
 };
 
 
-module.exports = reactModule;
+module.exports = vueModule;
